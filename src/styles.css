@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+/* Color Azul Base del Proyecto */
+:root {
+  --color-principal: #0000FF;
+}
+
+.bg-primary-custom {
+  background-color: var(--color-principal) !important;
+}
+
+.text-primary-custom {
+  color: var(--color-principal) !important;
+}
+
+/* Clases utilitarias globales */
+.btn-primary-custom {
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+}
+
+.btn-primary-custom:hover {
+    background-color: #0000cc;
+    color: white;
+}

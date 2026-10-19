@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom shadow-sm">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold d-flex align-items-center" routerLink="/home">
+            <i class="bi bi-geo-alt-fill me-2 fs-4"></i>
+            Conecta Maestro
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false"
+            aria-label="Abrir menú de navegación">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Enlaces del menú -->
+        <div class="collapse navbar-collapse" id="navbarPrincipal">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" routerLink="/home" routerLinkActive="fw-bold" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" routerLink="/sobre-nosotros" routerLinkActive="fw-bold">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" routerLink="/contacto" routerLinkActive="fw-bold">Contacto</a>
+                </li>
+
+                <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                    <a class="btn btn-outline-light w-100" routerLink="dashboard/iniciar-sesion">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                    <a class="btn bg-white text-primary-custom fw-bold w-100 shadow-sm" routerLink="dashboard/registro">Crear Cuenta</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
